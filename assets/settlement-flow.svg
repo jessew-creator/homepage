@@ -1,0 +1,24 @@
+<svg width="520" height="320" viewBox="0 0 520 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="320" rx="28" fill="url(#bg)"/>
+  <rect x="44" y="120" width="100" height="72" rx="22" fill="#122132" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="160" y="120" width="100" height="72" rx="22" fill="#122132" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="276" y="120" width="100" height="72" rx="22" fill="#122132" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="392" y="120" width="84" height="72" rx="22" fill="rgba(248,163,77,0.12)" stroke="rgba(248,163,77,0.42)"/>
+  <path d="M144 156H160" stroke="#F7B56B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M260 156H276" stroke="#F7B56B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M376 156H392" stroke="#F7B56B" stroke-width="3" stroke-linecap="round"/>
+  <text x="94" y="150" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">鐢宠</text>
+  <text x="94" y="170" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">閫€鍑?/text>
+  <text x="210" y="150" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">閿佸畾</text>
+  <text x="210" y="170" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">浠撲綅</text>
+  <text x="326" y="150" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">闃舵</text>
+  <text x="326" y="170" text-anchor="middle" fill="#D8E2EF" font-size="14" font-family="Segoe UI, sans-serif">缁撴潫</text>
+  <text x="434" y="150" text-anchor="middle" fill="#F7D2A6" font-size="14" font-family="Segoe UI, sans-serif">缁熶竴</text>
+  <text x="434" y="170" text-anchor="middle" fill="#F7D2A6" font-size="14" font-family="Segoe UI, sans-serif">缁撶畻</text>
+  <defs>
+    <linearGradient id="bg" x1="34" y1="22" x2="488" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16283D"/>
+      <stop offset="1" stop-color="#0A1320"/>
+    </linearGradient>
+  </defs>
+</svg>
