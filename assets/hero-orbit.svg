@@ -1,0 +1,85 @@
+<svg width="720" height="540" viewBox="0 0 720 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="540" rx="36" fill="url(#bg)"/>
+  <g opacity="0.28">
+    <path d="M86 106H634" stroke="url(#lineA)" stroke-width="1.5"/>
+    <path d="M86 434H634" stroke="url(#lineA)" stroke-width="1.5"/>
+    <path d="M128 72V468" stroke="url(#lineB)" stroke-width="1.5"/>
+    <path d="M592 72V468" stroke="url(#lineB)" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="362" cy="268" rx="232" ry="116" stroke="url(#orbit)" stroke-width="2"/>
+  <ellipse cx="362" cy="268" rx="164" ry="222" stroke="url(#orbitSoft)" stroke-width="2"/>
+  <circle cx="362" cy="268" r="118" fill="url(#core)"/>
+  <circle cx="362" cy="268" r="72" fill="url(#innerGlow)" opacity="0.82"/>
+  <circle cx="244" cy="184" r="14" fill="#ECECEC"/>
+  <circle cx="516" cy="244" r="10" fill="#A6B5F0"/>
+  <circle cx="210" cy="326" r="10" fill="#DDE8F3"/>
+  <circle cx="472" cy="382" r="12" fill="#C9CEDB"/>
+  <circle cx="592" cy="268" r="16" fill="url(#nodeA)"/>
+  <circle cx="128" cy="268" r="16" fill="url(#nodeB)"/>
+  <path d="M244 184L314 218" stroke="url(#traceA)" stroke-width="2"/>
+  <path d="M516 244L438 256" stroke="url(#traceB)" stroke-width="2"/>
+  <path d="M210 326L300 296" stroke="url(#traceA)" stroke-width="2"/>
+  <path d="M472 382L404 328" stroke="url(#traceB)" stroke-width="2"/>
+  <g filter="url(#blur)">
+    <circle cx="362" cy="268" r="168" fill="url(#halo)" opacity="0.22"/>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="60" y1="54" x2="648" y2="486" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0A0A"/>
+      <stop offset="0.54" stop-color="#030303"/>
+      <stop offset="1" stop-color="#111317"/>
+    </linearGradient>
+    <linearGradient id="lineA" x1="86" y1="106" x2="634" y2="106" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lineB" x1="128" y1="72" x2="128" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="130" y1="268" x2="594" y2="268" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#F2F2F2"/>
+      <stop offset="1" stop-color="#A6B5F0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="orbitSoft" x1="198" y1="46" x2="526" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A6B5F0" stop-opacity="0.08"/>
+      <stop offset="0.5" stop-color="#A6B5F0" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(362 268) rotate(90) scale(118)">
+      <stop stop-color="#1B1D22"/>
+      <stop offset="0.62" stop-color="#0B0C0F"/>
+      <stop offset="1" stop-color="#030303"/>
+    </radialGradient>
+    <radialGradient id="innerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(362 268) rotate(90) scale(72)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(362 268) rotate(90) scale(168)">
+      <stop stop-color="#A6B5F0"/>
+      <stop offset="1" stop-color="#A6B5F0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="traceA" x1="244" y1="184" x2="314" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="traceB" x1="516" y1="244" x2="404" y2="328" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A6B5F0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="nodeA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(592 268) rotate(90) scale(16)">
+      <stop stop-color="#A6B5F0"/>
+      <stop offset="1" stop-color="#A6B5F0" stop-opacity="0.2"/>
+    </radialGradient>
+    <radialGradient id="nodeB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 268) rotate(90) scale(16)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.2"/>
+    </radialGradient>
+    <filter id="blur" x="114" y="20" width="496" height="496" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+</svg>
