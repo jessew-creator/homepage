@@ -1,0 +1,18 @@
+<svg width="520" height="320" viewBox="0 0 520 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="320" rx="28" fill="url(#bg)"/>
+  <rect x="64" y="70" width="392" height="64" rx="20" fill="#122132" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="64" y="150" width="392" height="64" rx="20" fill="#122132" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="64" y="230" width="392" height="42" rx="18" fill="rgba(111,208,218,0.10)" stroke="rgba(111,208,218,0.32)"/>
+  <text x="98" y="108" fill="#D8E2EF" font-size="16" font-family="Segoe UI, sans-serif">New Commitments</text>
+  <text x="422" y="110" fill="#F8B56C" font-size="28" font-family="Consolas, monospace">+</text>
+  <text x="98" y="188" fill="#D8E2EF" font-size="16" font-family="Segoe UI, sans-serif">Pending Exits</text>
+  <text x="422" y="190" fill="#70D5E0" font-size="28" font-family="Consolas, monospace">-</text>
+  <text x="98" y="257" fill="#CDE4E7" font-size="16" font-family="Segoe UI, sans-serif">Net Raised Progress</text>
+  <text x="418" y="258" fill="#F4EFE6" font-size="24" font-family="Consolas, monospace">=</text>
+  <defs>
+    <linearGradient id="bg" x1="34" y1="22" x2="488" y2="292" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16283D"/>
+      <stop offset="1" stop-color="#0A1320"/>
+    </linearGradient>
+  </defs>
+</svg>
