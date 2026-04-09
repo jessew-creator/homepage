@@ -287,7 +287,25 @@ img { display: block; max-width: 100%; }
 .manifesto-copy {
   display: grid;
   gap: 20px;
-  font-size: 1.08rem;
+}
+
+.manifesto-line {
+  padding: 22px 24px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: 0 12px 26px rgba(32, 19, 64, 0.05);
+}
+
+.manifesto-line h3 {
+  margin-top: 10px;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.02;
+}
+
+.manifesto-line p:last-child {
+  margin: 12px 0 0;
+  font-size: 0.98rem;
 }
 
 .features {
@@ -320,6 +338,10 @@ img { display: block; max-width: 100%; }
 
 .feature-row.sky {
   background: linear-gradient(135deg, rgba(67, 182, 255, 0.18), rgba(255, 255, 255, 0.76));
+}
+
+.feature-row.violet {
+  background: linear-gradient(135deg, rgba(115, 103, 247, 0.18), rgba(255, 255, 255, 0.78));
 }
 
 .feature-copy h3 {
