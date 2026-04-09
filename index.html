@@ -1,25 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>oneworld Launchpad</title>
-    <meta name="description" content="oneworld Launchpad 是适合 AI Agent 团队持续推进的融资系统，连接首轮融资、多轮推进与 Plato Spot DEX 现货交易。" />
+    <meta
+      name="description"
+      content="oneworld Launchpad 是面向 AI Agent 团队的融资系统，连接首轮融资、阶段推进与 Plato Spot DEX 交易。"
+    />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
-  <body>
+  <body data-page="home">
     <div class="site">
       <header class="site-header">
         <div class="wrap header-inner">
           <a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a>
           <nav class="site-nav" aria-label="Primary">
-            <a href="./mechanism.html">机制</a>
-            <a href="./backers.html">支持者</a>
-            <a href="./creators.html">创作者</a>
-            <a href="./launch-to-trading.html">路径</a>
-            <a href="./faq.html">FAQ</a>
+            <a href="./mechanism.html" data-i18n="navMechanism">机制</a>
+            <a href="./backers.html" data-i18n="navBackers">支持者</a>
+            <a href="./creators.html" data-i18n="navCreators">创作者</a>
+            <a href="./launch-to-trading.html" data-i18n="navPath">路径</a>
+            <a href="./faq.html" data-i18n="navFaq">FAQ</a>
           </nav>
-          <a class="header-action" href="#cta">发起 Launch <span class="arrow">↗</span></a>
+          <div class="header-tools">
+            <div class="lang-switch" role="group" aria-label="Language">
+              <button class="lang-btn" type="button" data-lang="zh" aria-pressed="true">ZH</button>
+              <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <a class="header-action" href="#cta"><span data-i18n="headerLaunch">发起 Launch</span> <span class="arrow">↗</span></a>
+          </div>
         </div>
       </header>
 
@@ -28,12 +38,14 @@
           <div class="wrap">
             <div class="hero-grid">
               <div>
-                <p class="eyebrow">Launch on OneWorld. Trade on Plato.</p>
-                <h1 class="hero-title">连接 AI 生产力与 Web3 生产力</h1>
-                <p class="hero-text">AI 正在释放超级个体和小团队的生产力，oneworld 让这种生产力更早获得资金、信任与流动性。</p>
+                <p class="eyebrow" data-i18n="heroEyebrow">在 OneWorld 启动，在 Plato 交易</p>
+                <h1 class="hero-title" data-i18n="heroTitle">连接 AI 生产力与 Web3 生产力</h1>
+                <p class="hero-text" data-i18n="heroText">
+                  AI 正在释放小团队与超级个体的生产力。oneworld 让这种生产力更早获得资金、信任与流动性。
+                </p>
                 <div class="hero-actions">
-                  <a class="button primary" href="#cta">发起 Launch <span class="arrow">↗</span></a>
-                  <a class="button secondary" href="#core-advantages">查看核心特色</a>
+                  <a class="button primary" href="#cta"><span data-i18n="buttonLaunch">发起 Launch</span> <span class="arrow">↗</span></a>
+                  <a class="button secondary" href="#core-advantages" data-i18n="buttonCoreFeatures">核心特色</a>
                 </div>
               </div>
 
@@ -50,8 +62,8 @@
                   </div>
                   <div class="hero-status">
                     <div>
-                      <small>Funding Rail</small>
-                      <strong>Built for AI Agents</strong>
+                      <small data-i18n="heroStatusLabel">融资轨道</small>
+                      <strong data-i18n="heroStatusTitle">为 AI Agents 而建</strong>
                     </div>
                     <span class="ping" aria-hidden="true"></span>
                   </div>
@@ -61,51 +73,51 @@
 
             <div class="hero-metrics">
               <div>
-                <p class="metric-label">融资路径</p>
-                <p class="metric-value">最多 4 轮推进</p>
+                <p class="metric-label" data-i18n="metric1Label">融资路径</p>
+                <p class="metric-value" data-i18n="metric1Value">最多 4 轮推进</p>
               </div>
               <div>
-                <p class="metric-label">信息披露</p>
-                <p class="metric-value">融资信息公开透明</p>
+                <p class="metric-label" data-i18n="metric2Label">信息披露</p>
+                <p class="metric-value" data-i18n="metric2Value">融资信息公开透明</p>
               </div>
               <div>
                 <p class="metric-label">Plato Spot DEX</p>
-                <p class="metric-value">完成融资后直接进入现货交易</p>
+                <p class="metric-value" data-i18n="metric3Value">完成融资后进入现货交易</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="signal" aria-label="品牌声明">
+        <section class="signal" aria-label="Brand statement">
           <div class="signal-track">
-            <span class="signal-item">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
-            <span class="signal-item">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
-            <span class="signal-item">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
-            <span class="signal-item">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
+            <span class="signal-item" data-i18n="signalText">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
+            <span class="signal-item" data-i18n="signalText">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
+            <span class="signal-item" data-i18n="signalText">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
+            <span class="signal-item" data-i18n="signalText">Web3 重塑生产关系，AI 重写生产力，oneworld 把两者真正接通。</span>
           </div>
         </section>
 
         <section class="section">
           <div class="wrap">
             <div>
-              <p class="eyebrow">Why It Feels Different</p>
-              <h2 class="section-title">AI 生产力需要新的融资系统</h2>
+              <p class="eyebrow" data-i18n="diffEyebrow">为何不同</p>
+              <h2 class="section-title" data-i18n="diffTitle">AI 生产力需要新的融资系统</h2>
             </div>
             <div class="grid-3">
               <article class="card">
                 <span class="card-number">01</span>
-                <h3>AI 创造者不该等待旧资本</h3>
-                <p>AI 让更少的人做出更大的产品，但旧融资体系仍然偏爱旧组织。oneworld 让真正有生产力的团队，更早获得支持。</p>
+                <h3 data-i18n="diffCard1Title">AI 创造者不该等待旧资本</h3>
+                <p data-i18n="diffCard1Text">AI 让更少的人做出更大的产品，oneworld 让真正有生产力的团队更早获得支持。</p>
               </article>
               <article class="card">
                 <span class="card-number">02</span>
-                <h3>用真实进展打开下一轮</h3>
-                <p>每一轮融资都建立在阶段成果之上。项目不是靠透支未来获得信任，而是靠持续交付赢得下一轮。</p>
+                <h3 data-i18n="diffCard2Title">用真实进展打开下一轮</h3>
+                <p data-i18n="diffCard2Text">每一轮都建立在阶段成果之上。不是透支未来，而是用持续交付赢得下一轮。</p>
               </article>
               <article class="card">
                 <span class="card-number">03</span>
-                <h3>让生产力、资本与流动性接通</h3>
-                <p>oneworld 负责把 AI 项目的早期价值组织成融资能力，Plato 负责把验证后的价值带入市场。这是一条连续的价值通道。</p>
+                <h3 data-i18n="diffCard3Title">让生产力、资本与流动性接通</h3>
+                <p data-i18n="diffCard3Text">oneworld 组织早期融资，Plato 承接现货交易，形成连续价值路径。</p>
               </article>
             </div>
           </div>
@@ -114,29 +126,29 @@
         <section class="section feature-band" id="core-advantages">
           <div class="wrap">
             <div>
-              <p class="eyebrow">Core Advantages</p>
-              <h2 class="section-title">为 AI 团队打造的融资引擎</h2>
+              <p class="eyebrow" data-i18n="coreEyebrow">核心优势</p>
+              <h2 class="section-title" data-i18n="coreTitle">为 AI 团队打造的融资引擎</h2>
             </div>
             <div class="grid-2">
               <article class="card adv-card">
                 <div class="adv-visual"><div class="rail"><span></span><span></span><span></span><span></span></div></div>
-                <h3>把 AI 生产力变成融资能力</h3>
-                <p>支持 Angel、Series A、Series B 到 ICO 的逐步推进。团队不必先变成“大公司”，也能先启动第一轮，先被市场看见。</p>
+                <h3 data-i18n="coreCard1Title">把 AI 生产力变成融资能力</h3>
+                <p data-i18n="coreCard1Text">支持 Angel、Series A、Series B 到 ICO 的阶段推进，让团队先启动、再放大。</p>
               </article>
               <article class="card adv-card">
                 <div class="adv-visual"><div class="bar"><div class="bar-fill"></div></div></div>
-                <h3>让价值增长更早被看见</h3>
-                <p>平台围绕净融资额展示阶段进度，让真实增长更清晰可见。不是把项目包装得更大，而是让真实价值更早进入市场。</p>
+                <h3 data-i18n="coreCard2Title">让价值增长更早被看见</h3>
+                <p data-i18n="coreCard2Text">围绕净融资额展示进度，让真实增长比热度数字更清晰。</p>
               </article>
               <article class="card adv-card">
                 <div class="adv-visual"><div class="settle"></div><div class="settle-beam"></div></div>
-                <h3>让融资节奏保持稳定</h3>
-                <p>阶段中允许退出申请，但统一在阶段结束后结算。这样既保留流动性安排，也保护项目节奏不被短期波动打断。</p>
+                <h3 data-i18n="coreCard3Title">让融资节奏保持稳定</h3>
+                <p data-i18n="coreCard3Text">阶段中允许退出申请，但统一在阶段结束后结算，避免打断项目节奏。</p>
               </article>
               <article class="card adv-card">
                 <div class="adv-visual"><div class="handoff"><i></i></div></div>
-                <h3>从融资走向交易</h3>
-                <p>当项目完成 ICO，oneworld 不把交易困在站内，而是把后续流动性和价格发现交给 Plato。项目的成长，不该停在融资结束。</p>
+                <h3 data-i18n="coreCard4Title">从融资走向交易</h3>
+                <p data-i18n="coreCard4Text">完成 ICO 后，项目直接衔接 Plato Spot Orderbook DEX。</p>
               </article>
             </div>
           </div>
@@ -145,8 +157,8 @@
         <section class="section">
           <div class="wrap">
             <div>
-              <p class="eyebrow">For Both Sides</p>
-              <h2 class="section-title">同时服务创造者与支持者</h2>
+              <p class="eyebrow" data-i18n="sidesEyebrow">双边价值</p>
+              <h2 class="section-title" data-i18n="sidesTitle">同时服务创造者与支持者</h2>
             </div>
             <div class="big-graphic">
               <div class="orb-left"></div>
@@ -155,24 +167,24 @@
             </div>
             <div class="dual-grid">
               <article class="dual-card">
-                <p class="mini-label">For Creators</p>
-                <h3>让小团队更快起跑</h3>
+                <p class="mini-label" data-i18n="creatorsLabel">面向创作者</p>
+                <h3 data-i18n="creatorsTitle">让小团队更快起跑</h3>
                 <ul class="dual-copy">
-                  <li>先启动第一轮，让 AI 生产力先进入市场</li>
-                  <li>在达到阶段目标后，用真实成果打开下一轮</li>
-                  <li>把融资节奏和产品进展、社区反馈绑定成一条路径</li>
+                  <li data-i18n="creatorsPoint1">先启动第一轮，让 AI 生产力先进入市场</li>
+                  <li data-i18n="creatorsPoint2">在阶段目标达成后，用真实成果打开下一轮</li>
+                  <li data-i18n="creatorsPoint3">把融资节奏与产品进展绑定起来</li>
                 </ul>
-                <div class="detail-link"><a class="text-link" href="./creators.html">面向项目方了解更多 <span class="arrow">↗</span></a></div>
+                <div class="detail-link"><a class="text-link" href="./creators.html"><span data-i18n="buttonCreatorsMore">项目方详情</span> <span class="arrow">↗</span></a></div>
               </article>
               <article class="dual-card">
-                <p class="mini-label">For Backers</p>
-                <h3>让社区更早识别真实项目</h3>
+                <p class="mini-label" data-i18n="backersLabel">面向支持者</p>
+                <h3 data-i18n="backersTitle">让社区更早识别真实项目</h3>
                 <ul class="dual-copy">
-                  <li>看到真实已经发生的阶段，而不是被未来故事牵着走</li>
-                  <li>清晰理解当前价格、目标融资、释放比例和推进条件</li>
-                  <li>在 ICO 完成后，直接进入现货交易承接路径</li>
+                  <li data-i18n="backersPoint1">看到真实阶段，而不是未来故事</li>
+                  <li data-i18n="backersPoint2">清晰理解价格、目标融资和推进条件</li>
+                  <li data-i18n="backersPoint3">在 ICO 后直接进入现货交易承接路径</li>
                 </ul>
-                <div class="detail-link"><a class="text-link" href="./backers.html">面向支持者了解更多 <span class="arrow">↗</span></a></div>
+                <div class="detail-link"><a class="text-link" href="./backers.html"><span data-i18n="buttonBackersMore">支持者详情</span> <span class="arrow">↗</span></a></div>
               </article>
             </div>
           </div>
@@ -181,8 +193,8 @@
         <section class="section feature-band">
           <div class="wrap">
             <div>
-              <p class="eyebrow">Journey</p>
-              <h2 class="section-title">让 AI 项目从能力走向价值</h2>
+              <p class="eyebrow" data-i18n="journeyEyebrow">融资路径</p>
+              <h2 class="section-title" data-i18n="journeyTitle">让 AI 项目从能力走向价值</h2>
             </div>
           </div>
           <div class="journey-strip">
@@ -190,33 +202,53 @@
               <div class="line"></div>
               <div class="travel"></div>
               <div class="nodes">
-                <div class="path-node"><span class="path-dot"></span><span class="path-label">Stage 01</span></div>
-                <div class="path-node"><span class="path-dot"></span><span class="path-label">Stage 02</span></div>
-                <div class="path-node"><span class="path-dot"></span><span class="path-label">Stage 03</span></div>
-                <div class="path-node"><span class="path-dot"></span><span class="path-label">Stage 04</span></div>
-                <div class="path-node"><span class="path-dot"></span><span class="path-label">Stage 05</span></div>
+                <div class="path-node"><span class="path-dot"></span><span class="path-label" data-i18n="pathStage1">阶段 01</span></div>
+                <div class="path-node"><span class="path-dot"></span><span class="path-label" data-i18n="pathStage2">阶段 02</span></div>
+                <div class="path-node"><span class="path-dot"></span><span class="path-label" data-i18n="pathStage3">阶段 03</span></div>
+                <div class="path-node"><span class="path-dot"></span><span class="path-label" data-i18n="pathStage4">阶段 04</span></div>
+                <div class="path-node"><span class="path-dot"></span><span class="path-label" data-i18n="pathStage5">阶段 05</span></div>
               </div>
             </div>
           </div>
           <div class="wrap">
             <div class="steps-grid">
-              <article class="step-card"><p class="step-index">Step 1</p><h3>启动首轮</h3><p>项目以第一轮融资进入市场，让生产力先被看见。</p></article>
-              <article class="step-card"><p class="step-index">Step 2</p><h3>获得支持</h3><p>社区围绕当前阶段完成参与，项目开始获得真实的资金与市场信号。</p></article>
-              <article class="step-card"><p class="step-index">Step 3</p><h3>证明增长</h3><p>项目提交阶段证明，用真实成果赢得下一轮融资能力。</p></article>
-              <article class="step-card"><p class="step-index">Step 4</p><h3>完成发行</h3><p>当最终轮完成，项目从融资验证走向市场定价。</p></article>
-              <article class="step-card"><p class="step-index">Step 5</p><h3>进入 Plato</h3><p>通过 Plato 现货 Orderbook DEX 完成流动性承接，让价值真正闭环。</p></article>
+              <article class="step-card">
+                <p class="step-index" data-i18n="step1Label">步骤 1</p>
+                <h3 data-i18n="step1Title">启动首轮</h3>
+                <p data-i18n="step1Text">项目以第一轮融资进入市场，让生产力先被看见。</p>
+              </article>
+              <article class="step-card">
+                <p class="step-index" data-i18n="step2Label">步骤 2</p>
+                <h3 data-i18n="step2Title">获得支持</h3>
+                <p data-i18n="step2Text">社区围绕当前阶段参与，项目开始获得真实的资金与市场信号。</p>
+              </article>
+              <article class="step-card">
+                <p class="step-index" data-i18n="step3Label">步骤 3</p>
+                <h3 data-i18n="step3Title">证明增长</h3>
+                <p data-i18n="step3Text">项目提交阶段证明，用真实成果赢得下一轮融资能力。</p>
+              </article>
+              <article class="step-card">
+                <p class="step-index" data-i18n="step4Label">步骤 4</p>
+                <h3 data-i18n="step4Title">完成发行</h3>
+                <p data-i18n="step4Text">当最终轮完成，项目从融资验证走向市场定价。</p>
+              </article>
+              <article class="step-card">
+                <p class="step-index" data-i18n="step5Label">步骤 5</p>
+                <h3 data-i18n="step5Title">进入 Plato</h3>
+                <p data-i18n="step5Text">通过 Plato 现货 Orderbook DEX 完成流动性承接。</p>
+              </article>
             </div>
           </div>
         </section>
 
         <section class="section cta-block" id="cta">
           <div class="wrap cta-wrap">
-            <p class="eyebrow">Ready To Launch</p>
-            <h2 class="cta-title">让 AI 团队把生产力变成资本</h2>
-            <p class="cta-text">Web3 重塑生产关系，AI 重写生产力。oneworld 让真正创造价值的人更早获得资金支持，更早进入市场。</p>
+            <p class="eyebrow" data-i18n="ctaEyebrow">准备启动</p>
+            <h2 class="cta-title" data-i18n="ctaTitle">让 AI 团队把生产力变成资本</h2>
+            <p class="cta-text" data-i18n="ctaText">Web3 重塑生产关系，AI 重写生产力。oneworld 让真正创造价值的人更早获得资金支持。</p>
             <div class="cta-actions">
-              <a class="button primary" href="./index.html">发起 Launch <span class="arrow">↗</span></a>
-              <a class="button secondary" href="./mechanism.html">重新查看机制</a>
+              <a class="button primary" href="./index.html"><span data-i18n="buttonLaunch">发起 Launch</span> <span class="arrow">↗</span></a>
+              <a class="button secondary" href="./mechanism.html" data-i18n="buttonReviewMechanism">查看机制</a>
             </div>
           </div>
         </section>
@@ -225,7 +257,7 @@
       <footer class="footer">
         <div class="wrap footer-inner">
           <a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a>
-          <p class="footer-copy">© 2026 oneworld. Built for AI Agents.</p>
+          <p class="footer-copy" data-i18n="footerCopy">© 2026 oneworld. Built for AI Agents.</p>
         </div>
       </footer>
     </div>
