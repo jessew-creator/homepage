@@ -1,21 +1,100 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Launch to Trading | oneworld Launchpad</title>
+    <title>路径 | oneworld Launchpad</title>
     <meta name="description" content="从 Launch 到 Plato，是一条完整而清晰的融资与交易路径。" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
-  <body>
+  <body data-page="launch">
     <div class="site">
-      <header class="site-header"><div class="wrap header-inner"><a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a><nav class="site-nav"><a href="./mechanism.html">机制</a><a href="./backers.html">支持者</a><a href="./creators.html">创作者</a><a href="./launch-to-trading.html" aria-current="page">路径</a><a href="./faq.html">FAQ</a></nav><a class="header-action" href="./index.html#cta">发起 Launch <span class="arrow">↗</span></a></div></header>
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./mechanism.html" data-i18n="navMechanism">机制</a>
+            <a href="./backers.html" data-i18n="navBackers">支持者</a>
+            <a href="./creators.html" data-i18n="navCreators">创作者</a>
+            <a href="./launch-to-trading.html" aria-current="page" data-i18n="navPath">路径</a>
+            <a href="./faq.html" data-i18n="navFaq">FAQ</a>
+          </nav>
+          <div class="header-tools">
+            <div class="lang-switch" role="group" aria-label="Language">
+              <button class="lang-btn" type="button" data-lang="zh" aria-pressed="true">ZH</button>
+              <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+            <a class="header-action" href="./index.html#cta"><span data-i18n="headerLaunch">发起 Launch</span> <span class="arrow">↗</span></a>
+          </div>
+        </div>
+      </header>
+
       <main class="main">
-        <section class="section page-hero"><div class="wrap"><p class="eyebrow">Launch to Trading</p><h1 class="page-title">让生产力、资本与流动性接通</h1><p class="page-text">oneworld 把 AI 项目的早期价值组织成融资能力，Plato 再把验证后的价值带入市场。</p></div></section>
-        <section class="section" style="padding-top:24px;"><div class="wrap"><div class="bridge-visual"><div class="bridge-layout"><div class="bridge-node"><div class="bridge-circle launch">Launchpad</div><div class="metric-label">早期融资</div></div><div class="bridge-line-wrap"></div><div class="bridge-node"><div class="bridge-circle plato">Plato</div><div class="metric-label">现货交易</div></div></div></div></div></section>
-        <section class="section" style="padding-top:32px;"><div class="wrap"><div class="grid-2"><article class="card"><h3>Launchpad 负责融资</h3><p>项目在 oneworld 完成从首轮到 ICO 的逐步融资，让生产力先被社区支持、被资本识别。</p></article><article class="card"><h3>Plato 负责交易</h3><p>当融资完成，项目进入 Plato Spot Orderbook DEX，交给更开放的现货市场完成价格发现。</p></article><article class="card"><h3>融资与交易边界清晰</h3><p>融资负责建立信任，交易负责建立流动性。把两者分层，是为了让每个环节更有力量。</p></article><article class="card"><h3>形成价值闭环</h3><p>oneworld 不是一个短暂的起点页，而是让 AI 项目从创造、融资一路走向市场流动性。</p></article></div><div class="center-stack" style="margin-top:120px;"><h2 class="cta-title">让价值从诞生起流动</h2><div class="center-actions" style="margin-top:28px;"><a class="button primary" href="./index.html">回到首页</a><a class="button secondary" href="./mechanism.html">查看项目路径</a></div></div></div></section>
+        <section class="section page-hero">
+          <div class="wrap">
+            <p class="eyebrow" data-i18n="pageEyebrow">路径</p>
+            <h1 class="page-title" data-i18n="pageTitle">让生产力、资本与流动性接通</h1>
+            <p class="page-text" data-i18n="pageText">oneworld 把 AI 项目的早期价值组织成融资能力，Plato 再把验证后的价值带入市场。</p>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 24px">
+          <div class="wrap">
+            <div class="bridge-visual">
+              <div class="bridge-layout">
+                <div class="bridge-node">
+                  <div class="bridge-circle launch">Launchpad</div>
+                  <div class="metric-label" data-i18n="bridgeLaunchLabel">早期融资</div>
+                </div>
+                <div class="bridge-line-wrap"></div>
+                <div class="bridge-node">
+                  <div class="bridge-circle plato">Plato</div>
+                  <div class="metric-label" data-i18n="bridgePlatoLabel">现货交易</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 32px">
+          <div class="wrap">
+            <div class="grid-2">
+              <article class="card">
+                <h3 data-i18n="card1Title">Launchpad 负责融资</h3>
+                <p data-i18n="card1Text">项目在 oneworld 完成从首轮到 ICO 的逐步融资，让生产力先被社区支持、被资本识别。</p>
+              </article>
+              <article class="card">
+                <h3 data-i18n="card2Title">Plato 负责交易</h3>
+                <p data-i18n="card2Text">当融资完成，项目进入 Plato Spot Orderbook DEX，交给更开放的现货市场完成价格发现。</p>
+              </article>
+              <article class="card">
+                <h3 data-i18n="card3Title">融资与交易边界清晰</h3>
+                <p data-i18n="card3Text">融资负责建立信任，交易负责建立流动性。把两者分层，是为了让每个环节更有力量。</p>
+              </article>
+              <article class="card">
+                <h3 data-i18n="card4Title">形成价值闭环</h3>
+                <p data-i18n="card4Text">oneworld 不是一个短暂的起点页，而是让 AI 项目从创造、融资一路走向市场流动性。</p>
+              </article>
+            </div>
+
+            <div class="center-stack" style="margin-top: 120px">
+              <h2 class="cta-title" data-i18n="ctaTitle">让价值从诞生起流动</h2>
+              <div class="center-actions" style="margin-top: 28px">
+                <a class="button primary" href="./index.html" data-i18n="buttonBackHome">回到首页</a>
+                <a class="button secondary" href="./mechanism.html" data-i18n="buttonViewMechanism">查看机制</a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a><p class="footer-copy">© 2026 oneworld. Built for AI Agents.</p></div></footer>
+
+      <footer class="footer">
+        <div class="wrap footer-inner">
+          <a class="brand" href="./index.html"><span class="brand-mark"></span>oneworld <span>Launchpad</span></a>
+          <p class="footer-copy" data-i18n="footerCopy">© 2026 oneworld. Built for AI Agents.</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
