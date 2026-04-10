@@ -6,35 +6,49 @@
     <title>机制 | oneworld Launchpad</title>
     <meta
       name="description"
-      content="了解 oneworld Launchpad 如何处理多轮融资、阶段证明、净融资额与 Plato Spot DEX 衔接。"
+      content="了解 oneworld Launchpad 如何处理多轮融资、阶段证明、净融资额与 Plato Spot DEX 承接。"
     />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./app.js"></script>
   </head>
-  <body data-page="mechanism">
+  <body
+    data-page="mechanism"
+    data-title-zh="机制 | oneworld Launchpad"
+    data-title-en="Mechanism | oneworld Launchpad"
+    data-description-zh="了解 oneworld Launchpad 如何处理多轮融资、阶段证明、净融资额与 Plato Spot DEX 承接。"
+    data-description-en="Learn how oneworld Launchpad handles staged rounds, proof gates, net funding, and the Plato Spot DEX handoff."
+  >
     <div class="page">
       <header class="site-header">
         <div class="wrap header-inner">
-          <a class="brand" href="./index.html" aria-label="oneworld Launchpad home">
+          <a
+            class="brand"
+            href="./index.html"
+            aria-label="oneworld Launchpad home"
+            data-zh-aria-label="oneworld Launchpad 首页"
+            data-en-aria-label="oneworld Launchpad home"
+          >
             <span class="brand-mark"></span>
-            <span>oneworld</span>
+            <span>oneworld Launchpad</span>
           </a>
-          <nav class="site-nav">
-            <a href="./mechanism.html" data-i18n="common.navMechanism">机制</a>
-            <a href="./backers.html" data-i18n="common.navBackers">支持者</a>
-            <a href="./creators.html" data-i18n="common.navCreators">创作者</a>
-            <a href="./launch-to-trading.html" data-i18n="common.navPath">路径</a>
-            <a href="./faq.html" data-i18n="common.navFaq">FAQ</a>
+
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./mechanism.html" aria-current="page" data-zh="机制" data-en="Mechanism">机制</a>
+            <a href="./backers.html" data-zh="支持者" data-en="Backers">支持者</a>
+            <a href="./creators.html" data-zh="创作者" data-en="Creators">创作者</a>
+            <a href="./launch-to-trading.html" data-zh="路径" data-en="Path">路径</a>
+            <a href="./faq.html" data-zh="FAQ" data-en="FAQ">FAQ</a>
           </nav>
+
           <div class="header-actions">
             <div class="lang-shell">
-              <span class="lang-label" data-i18n="common.langLabel">语言</span>
+              <span class="lang-label" data-zh="语言" data-en="Language">语言</span>
               <div class="lang-switch" role="group" aria-label="Language switcher">
-                <button type="button" data-lang-option="zh">中</button>
+                <button type="button" data-lang-option="zh">ZH</button>
                 <button type="button" data-lang-option="en">EN</button>
               </div>
             </div>
-            <a class="header-cta" href="./index.html#launch" data-i18n="common.headerLaunch">发起 Launch</a>
+            <a class="header-cta" href="./index.html#launch" data-zh="发起 Launch" data-en="Launch">发起 Launch</a>
           </div>
         </div>
       </header>
@@ -42,17 +56,31 @@
       <main>
         <section class="page-hero wrap reveal">
           <div class="page-hero-media">
-            <img src="./assets/network-rings.svg" alt="Illustrated network rings" />
+            <img
+              src="./assets/network-rings.svg"
+              alt="Illustrated funding observatory"
+              data-zh-alt="多轮融资、净融资额与阶段证明的观察场景插图"
+              data-en-alt="Illustration of staged rounds, net funding, and proof gates"
+            />
           </div>
+
           <div class="page-hero-copy">
-            <p class="section-tag" data-i18n="mechanism.pageTag">机制</p>
-            <h1 data-i18n="mechanism.pageTitle">为 AI 生产力设计的融资规则</h1>
-            <p data-i18n="mechanism.pageText">
-              当 AI 让少数人拥有组织级生产力，融资系统也要变得更轻、更快、更真实。oneworld 把融资、验证和市场承接组织成一套连续机制。
+            <p class="section-tag" data-zh="机制" data-en="Mechanism">机制</p>
+            <h1
+              data-zh="融资不是一次讲完故事"
+              data-en="Funding should not tell the whole story at once"
+            >
+              融资不是一次讲完故事
+            </h1>
+            <p
+              data-zh="oneworld 把 AI Agent 项目的融资过程拆成真实阶段。只披露当前阶段，用阶段证明开启下一轮，完成 ICO 后进入 Plato Spot DEX。"
+              data-en="oneworld breaks AI Agent funding into live stages. Show only the current stage, unlock the next with proof, and move into Plato Spot DEX after ICO."
+            >
+              oneworld 把 AI Agent 项目的融资过程拆成真实阶段。只披露当前阶段，用阶段证明开启下一轮，完成 ICO 后进入 Plato Spot DEX。
             </p>
             <div class="page-actions">
-              <a class="primary-button" href="./creators.html" data-i18n="mechanism.ctaPrimary">创作者视角</a>
-              <a class="secondary-button" href="./launch-to-trading.html" data-i18n="mechanism.ctaSecondary">查看路径</a>
+              <a class="primary-button" href="./creators.html" data-zh="创作者视角" data-en="Creator View">创作者视角</a>
+              <a class="secondary-button" href="./backers.html" data-zh="支持者视角" data-en="Backer View">支持者视角</a>
             </div>
           </div>
         </section>
@@ -60,112 +88,183 @@
         <section class="wrap reveal">
           <div class="rail-strip">
             <article class="rail-card">
-              <strong data-i18n="mechanism.rail1Title">Angel</strong>
-              <p data-i18n="mechanism.rail1Text">先启动第一轮</p>
+              <strong>Angel</strong>
+              <p data-zh="启动第一轮融资" data-en="Launch the first round">启动第一轮融资</p>
             </article>
             <article class="rail-card">
-              <strong data-i18n="mechanism.rail2Title">Series A</strong>
-              <p data-i18n="mechanism.rail2Text">用阶段成果放大</p>
+              <strong>Series A</strong>
+              <p data-zh="用阶段成果放大" data-en="Scale with proof">用阶段成果放大</p>
             </article>
             <article class="rail-card">
-              <strong data-i18n="mechanism.rail3Title">Series B</strong>
-              <p data-i18n="mechanism.rail3Text">继续提升规模</p>
+              <strong>Series B</strong>
+              <p data-zh="继续提升规模" data-en="Expand the round">继续提升规模</p>
             </article>
             <article class="rail-card">
-              <strong data-i18n="mechanism.rail4Title">ICO</strong>
-              <p data-i18n="mechanism.rail4Text">完成最终融资</p>
+              <strong>ICO</strong>
+              <p data-zh="完成最终融资" data-en="Finish the final raise">完成最终融资</p>
             </article>
             <article class="rail-card">
-              <strong data-i18n="mechanism.rail5Title">Plato</strong>
-              <p data-i18n="mechanism.rail5Text">进入现货交易</p>
+              <strong>Plato</strong>
+              <p data-zh="进入现货交易" data-en="Enter spot trading">进入现货交易</p>
             </article>
           </div>
         </section>
 
         <section class="feature-section wrap reveal">
           <div class="feature-copy wide">
-            <p class="section-tag" data-i18n="mechanism.pageTag">机制</p>
-            <h2 data-i18n="mechanism.proofTitle">不是预支未来，而是用真实进展赢得下一轮</h2>
-            <p data-i18n="mechanism.proofText">
-              平台把每一轮都当成一次阶段验证。项目先把第一轮做出来，再通过阶段证明开启下一轮，融资节奏与产品进展保持一致。
-            </p>
+            <p class="section-tag" data-zh="规则细节" data-en="Rule Detail">规则细节</p>
+            <h2
+              data-zh="用真实进展赢得下一轮"
+              data-en="Earn the next round with real progress"
+            >
+              用真实进展赢得下一轮
+            </h2>
           </div>
 
           <div class="story-grid">
             <article class="story-card soft-lilac">
-              <h3 data-i18n="mechanism.block1Title">最多 4 轮推进</h3>
-              <p data-i18n="mechanism.block1Text">给有生产力的项目一条清晰成长线，让价值在阶段推进中持续放大。</p>
+              <h3 data-zh="最多 4 轮推进" data-en="Up to 4 rounds">最多 4 轮推进</h3>
+              <p
+                data-zh="给高生产力项目一条清晰成长线，让价值按阶段持续放大。"
+                data-en="Give high-output projects a clean growth line so value can expand through stages."
+              >
+                给高生产力项目一条清晰成长线，让价值按阶段持续放大。
+              </p>
             </article>
+
             <article class="story-card soft-blue">
-              <h3 data-i18n="mechanism.block2Title">只披露真实阶段</h3>
-              <p data-i18n="mechanism.block2Text">市场看到的是项目当前真实拥有的能力与进展，而不是预写好的未来蓝图。</p>
+              <h3 data-zh="只展示真实阶段" data-en="Only real stages are shown">只展示真实阶段</h3>
+              <p
+                data-zh="市场看到的是当前真实存在的阶段，而不是被提前写好的未来剧本。"
+                data-en="The market sees what exists now, not a future script written in advance."
+              >
+                市场看到的是当前真实存在的阶段，而不是被提前写好的未来剧本。
+              </p>
             </article>
+
             <article class="story-card soft-green">
-              <h3 data-i18n="mechanism.block3Title">阶段证明打开下一轮</h3>
-              <p data-i18n="mechanism.block3Text">下一轮不是默认存在，而是建立在当前阶段已经完成的成果之上。</p>
+              <h3 data-zh="阶段证明驱动下一轮" data-en="Proof unlocks the next round">阶段证明驱动下一轮</h3>
+              <p
+                data-zh="下一轮不是默认出现，而是建立在当前阶段已经完成的成果之上。"
+                data-en="The next round is not assumed. It opens only after the current one has been earned."
+              >
+                下一轮不是默认出现，而是建立在当前阶段已经完成的成果之上。
+              </p>
             </article>
+
             <article class="story-card soft-pink">
-              <h3 data-i18n="mechanism.block4Title">净融资额更重要</h3>
-              <p data-i18n="mechanism.block4Text">我们更看重真实沉淀下来的融资结果，而不是短期被放大的热度数字。</p>
+              <h3 data-zh="净融资额优先展示" data-en="Net funding matters more">净融资额优先展示</h3>
+              <p
+                data-zh="真实保留下来的融资结果，比被放大的总数字更重要。"
+                data-en="Real retained funding matters more than inflated headline numbers."
+              >
+                真实保留下来的融资结果，比被放大的总数字更重要。
+              </p>
             </article>
+
             <article class="story-card soft-lilac">
-              <h3 data-i18n="mechanism.block5Title">退出申请统一结算</h3>
-              <p data-i18n="mechanism.block5Text">既保留退出安排，也不让融资节奏被频繁打断。</p>
+              <h3 data-zh="退出申请阶段后结算" data-en="Exit requests settle after the stage">退出申请阶段后结算</h3>
+              <p
+                data-zh="保留退出安排，但不让融资节奏在阶段中途被打断。"
+                data-en="Keep an exit path without breaking funding rhythm mid-stage."
+              >
+                保留退出安排，但不让融资节奏在阶段中途被打断。
+              </p>
             </article>
+
             <article class="story-card soft-blue">
-              <h3 data-i18n="mechanism.block6Title">完成融资后进入 Plato</h3>
-              <p data-i18n="mechanism.block6Text">当项目完成 ICO，它不该停在融资结果里，而该继续走向现货市场。</p>
+              <h3 data-zh="ICO 后进入 Plato" data-en="After ICO comes Plato">ICO 后进入 Plato</h3>
+              <p
+                data-zh="融资完成后不留在融资站里，而是继续走向公开交易市场。"
+                data-en="After funding, the path keeps moving into the open spot market."
+              >
+                融资完成后不留在融资站里，而是继续走向公开交易市场。
+              </p>
             </article>
           </div>
         </section>
 
         <section class="story-layout wrap reverse reveal">
           <div class="story-visual">
-            <img src="./assets/activity-hall.svg" alt="Activity hall illustration" />
+            <img
+              src="./assets/activity-hall.svg"
+              alt="Illustrated staged funding hall"
+              data-zh-alt="融资阶段、证明闸门与交易承接的大厅场景插图"
+              data-en-alt="Illustration of funding stages, proof gates, and trading handoff"
+            />
           </div>
+
           <div class="story-copy">
-            <p class="section-tag" data-i18n="mechanism.proofTag">规则细节</p>
-            <h2 data-i18n="mechanism.proofTitle">不是预支未来，而是用真实进展赢得下一轮</h2>
-            <p data-i18n="mechanism.proofText">
-              平台把每一轮都当成一次阶段验证。项目先把第一轮做出来，再通过阶段证明开启下一轮，融资节奏与产品进展保持一致。
+            <p class="section-tag" data-zh="机制流程" data-en="Mechanism Flow">机制流程</p>
+            <h2
+              data-zh="让融资节奏跟着产品节奏走"
+              data-en="Let funding move with product progress"
+            >
+              让融资节奏跟着产品节奏走
+            </h2>
+            <p
+              data-zh="项目先完成第一轮，再在达到阶段目标后提交证明，之后才配置下一轮价格、目标融资和释放比例。"
+              data-en="Projects complete the first round, submit proof after hitting the stage goal, and only then configure the next round's pricing, target, and unlock ratio."
+            >
+              项目先完成第一轮，再在达到阶段目标后提交证明，之后才配置下一轮价格、目标融资和释放比例。
             </p>
+
             <ul class="support-list">
-              <li data-i18n="mechanism.proofPoint1">项目创建之初只需配置当前轮次</li>
-              <li data-i18n="mechanism.proofPoint2">完成阶段目标后提交证明材料</li>
-              <li data-i18n="mechanism.proofPoint3">配置下一阶段价格、目标融资与释放比例</li>
-              <li data-i18n="mechanism.proofPoint4">完成 ICO 后切换到 Plato Spot DEX</li>
+              <li data-zh="创建之初只需配置当前轮次" data-en="Configure only the current round at launch">创建之初只需配置当前轮次</li>
+              <li data-zh="达到阶段目标后提交证明材料" data-en="Submit proof after hitting stage goals">达到阶段目标后提交证明材料</li>
+              <li data-zh="下一轮不是自动出现，而是靠真实成果打开" data-en="The next round is not automatic. It opens with real progress.">下一轮不是自动出现，而是靠真实成果打开</li>
+              <li data-zh="完成 ICO 后切换到 Plato Spot DEX" data-en="Move into Plato Spot DEX after ICO">完成 ICO 后切换到 Plato Spot DEX</li>
             </ul>
           </div>
         </section>
 
         <section class="launch-section wrap reveal">
-          <p class="section-tag" data-i18n="mechanism.pageTag">机制</p>
-          <h2 data-i18n="mechanism.ctaTitle">把 AI 的增长节奏变成融资节奏</h2>
-          <p class="launch-text" data-i18n="mechanism.ctaText">这是一套更适合 AI Agent 团队持续推进的融资机制。</p>
+          <p class="section-tag" data-zh="Mechanism" data-en="Mechanism">Mechanism</p>
+          <h2
+            data-zh="把 AI 的增长节奏变成融资节奏"
+            data-en="Turn AI growth into funding rhythm"
+          >
+            把 AI 的增长节奏变成融资节奏
+          </h2>
+          <p
+            class="launch-text"
+            data-zh="这是更适合 AI Agent 团队持续推进的一套融资规则。"
+            data-en="A funding mechanism built for AI Agent teams that keep shipping."
+          >
+            这是更适合 AI Agent 团队持续推进的一套融资规则。
+          </p>
           <div class="launch-actions">
-            <a class="primary-button" href="./creators.html" data-i18n="mechanism.ctaPrimary">创作者视角</a>
-            <a class="secondary-button" href="./launch-to-trading.html" data-i18n="mechanism.ctaSecondary">查看路径</a>
+            <a class="primary-button" href="./creators.html" data-zh="创作者视角" data-en="Creator View">创作者视角</a>
+            <a class="secondary-button" href="./launch-to-trading.html" data-zh="查看路径" data-en="View Path">查看路径</a>
           </div>
         </section>
 
         <footer class="footer-shell wrap reveal">
           <div class="footer-card">
             <div class="footer-copy">
-              <strong data-i18n="common.footerTagline">连接 AI 生产力与 Web3 生产关系</strong>
-              <p data-i18n="common.footerNote">© 2026 oneworld. Built for AI Agents.</p>
+              <strong
+                data-zh="连接 AI 生产力与 Web3 生产关系"
+                data-en="Connect AI Productivity with Web3 Coordination"
+              >
+                连接 AI 生产力与 Web3 生产关系
+              </strong>
+              <p data-zh="© 2026 oneworld. Built for AI Agents." data-en="© 2026 oneworld. Built for AI Agents.">
+                © 2026 oneworld. Built for AI Agents.
+              </p>
               <div class="footer-nav">
-                <a href="./index.html" data-i18n="common.footerHome">首页</a>
-                <a href="./mechanism.html" data-i18n="common.navMechanism">机制</a>
-                <a href="./backers.html" data-i18n="common.navBackers">支持者</a>
-                <a href="./creators.html" data-i18n="common.navCreators">创作者</a>
-                <a href="./launch-to-trading.html" data-i18n="common.navPath">路径</a>
-                <a href="./faq.html" data-i18n="common.navFaq">FAQ</a>
+                <a href="./index.html" data-zh="首页" data-en="Home">首页</a>
+                <a href="./mechanism.html" data-zh="机制" data-en="Mechanism">机制</a>
+                <a href="./backers.html" data-zh="支持者" data-en="Backers">支持者</a>
+                <a href="./creators.html" data-zh="创作者" data-en="Creators">创作者</a>
+                <a href="./launch-to-trading.html" data-zh="路径" data-en="Path">路径</a>
+                <a href="./faq.html" data-zh="FAQ" data-en="FAQ">FAQ</a>
               </div>
             </div>
+
             <div class="lang-shell">
-              <span class="lang-label" data-i18n="common.footerLanguage">语言</span>
+              <span class="lang-label" data-zh="语言" data-en="Language">语言</span>
               <div class="lang-switch" role="group" aria-label="Language switcher footer">
-                <button type="button" data-lang-option="zh">中</button>
+                <button type="button" data-lang-option="zh">ZH</button>
                 <button type="button" data-lang-option="en">EN</button>
               </div>
             </div>
