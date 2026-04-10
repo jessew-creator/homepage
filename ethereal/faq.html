@@ -11,156 +11,252 @@
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./app.js"></script>
   </head>
-  <body data-page="faq">
+  <body
+    data-page="faq"
+    data-title-zh="FAQ | oneworld Launchpad"
+    data-title-en="FAQ | oneworld Launchpad"
+    data-description-zh="关于 oneworld Launchpad 的常见问题，包括轮次、阶段证明、净融资额和 Plato 承接逻辑。"
+    data-description-en="Common questions about oneworld Launchpad, including rounds, proof gates, net funding, and the Plato handoff."
+  >
     <div class="page">
       <header class="site-header">
         <div class="wrap header-inner">
-          <a class="brand" href="./index.html" aria-label="oneworld Launchpad home">
+          <a
+            class="brand"
+            href="./index.html"
+            aria-label="oneworld Launchpad home"
+            data-zh-aria-label="oneworld Launchpad 首页"
+            data-en-aria-label="oneworld Launchpad home"
+          >
             <span class="brand-mark"></span>
-            <span>oneworld</span>
+            <span>oneworld Launchpad</span>
           </a>
-          <nav class="site-nav">
-            <a href="./mechanism.html" data-i18n="common.navMechanism">机制</a>
-            <a href="./backers.html" data-i18n="common.navBackers">支持者</a>
-            <a href="./creators.html" data-i18n="common.navCreators">创作者</a>
-            <a href="./launch-to-trading.html" data-i18n="common.navPath">路径</a>
-            <a href="./faq.html" data-i18n="common.navFaq">FAQ</a>
+
+          <nav class="site-nav" aria-label="Primary">
+            <a href="./mechanism.html" data-zh="机制" data-en="Mechanism">机制</a>
+            <a href="./backers.html" data-zh="支持者" data-en="Backers">支持者</a>
+            <a href="./creators.html" data-zh="创作者" data-en="Creators">创作者</a>
+            <a href="./launch-to-trading.html" data-zh="路径" data-en="Path">路径</a>
+            <a href="./faq.html" aria-current="page" data-zh="FAQ" data-en="FAQ">FAQ</a>
           </nav>
+
           <div class="header-actions">
             <div class="lang-shell">
-              <span class="lang-label" data-i18n="common.langLabel">语言</span>
+              <span class="lang-label" data-zh="语言" data-en="Language">语言</span>
               <div class="lang-switch" role="group" aria-label="Language switcher">
-                <button type="button" data-lang-option="zh">中</button>
+                <button type="button" data-lang-option="zh">ZH</button>
                 <button type="button" data-lang-option="en">EN</button>
               </div>
             </div>
-            <a class="header-cta" href="./index.html#launch" data-i18n="common.headerLaunch">发起 Launch</a>
+            <a class="header-cta" href="./index.html#launch" data-zh="发起 Launch" data-en="Launch">发起 Launch</a>
           </div>
         </div>
       </header>
 
       <main>
+        <section class="page-hero wrap reveal">
+          <div class="page-hero-media">
+            <img
+              src="./assets/people-meet.svg"
+              alt="Illustrated knowledge and support scene"
+              data-zh-alt="围绕项目信息进行讨论与问答的场景插图"
+              data-en-alt="Illustration of a community discussing project information"
+            />
+          </div>
+
+          <div class="page-hero-copy">
+            <p class="section-tag">FAQ</p>
+            <h1 data-zh="常见问题" data-en="Frequently Asked Questions">常见问题</h1>
+            <p
+              data-zh="这里回答 oneworld Launchpad 最核心的机制问题，帮助项目方、支持者和合作方更快理解这套融资系统。"
+              data-en="This page answers the core mechanism questions behind oneworld Launchpad so creators, backers, and partners can understand the system quickly."
+            >
+              这里回答 oneworld Launchpad 最核心的机制问题，帮助项目方、支持者和合作方更快理解这套融资系统。
+            </p>
+
+            <div class="topic-chip-row">
+              <span class="topic-chip" data-zh="融资机制" data-en="Funding Rules">融资机制</span>
+              <span class="topic-chip" data-zh="阶段推进" data-en="Stage Progress">阶段推进</span>
+              <span class="topic-chip" data-zh="Plato 承接" data-en="Plato Handoff">Plato 承接</span>
+            </div>
+          </div>
+        </section>
+
         <section class="faq-shell wrap reveal">
           <div class="faq-head">
-            <p class="section-tag" data-i18n="faq.pageTag">FAQ</p>
-            <h2 data-i18n="faq.pageTitle">常见问题</h2>
-            <p data-i18n="faq.pageText">
-              关于 oneworld Launchpad 的机制、融资路径与 Plato 承接方式，这里给出更清楚的回答。
+            <p class="section-tag" data-zh="Quick Guide" data-en="Quick Guide">Quick Guide</p>
+            <h2
+              data-zh="8 个问题，快速看懂 oneworld"
+              data-en="Eight questions to understand oneworld"
+            >
+              8 个问题，快速看懂 oneworld
+            </h2>
+            <p
+              data-zh="如果你第一次接触这套产品，先从下面这些问题开始。它们覆盖定位、轮次、披露、结算和 Plato 路径。"
+              data-en="If this is your first time seeing the product, start here. These questions cover positioning, rounds, disclosure, settlement, and the Plato path."
+            >
+              如果你第一次接触这套产品，先从下面这些问题开始。它们覆盖定位、轮次、披露、结算和 Plato 路径。
             </p>
-            <div class="topic-chip-row">
-              <span class="topic-chip" data-i18n="faq.topic1">融资机制</span>
-              <span class="topic-chip" data-i18n="faq.topic2">阶段推进</span>
-              <span class="topic-chip" data-i18n="faq.topic3">Plato 承接</span>
-            </div>
           </div>
 
           <div class="faq-layout">
             <aside class="faq-intro">
-              <p class="section-tag" data-i18n="faq.introKicker">快速上手</p>
-              <h3 data-i18n="faq.introTitle">8 个问题，快速看懂 oneworld</h3>
-              <p data-i18n="faq.introText">
-                帮助项目方、支持者和合作方更快理解 oneworld Launchpad 的融资逻辑。
+              <p class="faq-kicker" data-zh="适合谁看" data-en="Who this helps">适合谁看</p>
+              <h3 data-zh="给项目方、支持者和合作方的机制说明" data-en="A mechanism guide for creators, backers, and partners">给项目方、支持者和合作方的机制说明</h3>
+              <p
+                data-zh="oneworld 的重点不在于一次性讲完未来，而在于让真实阶段、真实披露和真实推进成为融资主线。"
+                data-en="oneworld is not about telling the entire future at once. It is about making live stages, real disclosure, and real progress the core of funding."
+              >
+                oneworld 的重点不在于一次性讲完未来，而在于让真实阶段、真实披露和真实推进成为融资主线。
               </p>
               <ul class="faq-points">
-                <li data-i18n="faq.topic1">融资机制</li>
-                <li data-i18n="faq.topic2">阶段推进</li>
-                <li data-i18n="faq.topic3">Plato 承接</li>
+                <li data-zh="理解最多 4 轮推进" data-en="Understand the four-round path">理解最多 4 轮推进</li>
+                <li data-zh="理解阶段证明为何重要" data-en="See why proof matters">理解阶段证明为何重要</li>
+                <li data-zh="理解融资如何衔接 Plato" data-en="See how funding connects to Plato">理解融资如何衔接 Plato</li>
               </ul>
             </aside>
 
             <div class="faq-accordion">
               <details class="faq-item" open>
                 <summary>
-                  <span class="faq-kicker" data-i18n="faq.q1Tag">定位</span>
-                  <span data-i18n="faq.q1">什么样的项目适合 oneworld Launchpad？</span>
+                  <span class="faq-kicker" data-zh="定位" data-en="Positioning">定位</span>
+                  <span data-zh="什么样的项目适合 oneworld Launchpad?" data-en="What kind of project fits oneworld Launchpad?">
+                    什么样的项目适合 oneworld Launchpad?
+                  </span>
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="faq-answer">
-                  <p data-i18n="faq.a1">
-                    适合希望围绕真实产品进展逐轮推进融资的 AI Agent 项目，尤其适合边验证边融资的团队。
+                  <p
+                    data-zh="适合希望围绕真实产品进展逐轮推进融资的 AI Agent 项目，尤其适合边验证边融资的小团队和超级个体。"
+                    data-en="It fits AI Agent projects that want to move funding round by round around real product progress, especially small teams and solo builders who validate as they raise."
+                  >
+                    适合希望围绕真实产品进展逐轮推进融资的 AI Agent 项目，尤其适合边验证边融资的小团队和超级个体。
                   </p>
                 </div>
               </details>
 
               <details class="faq-item">
                 <summary>
-                  <span class="faq-kicker" data-i18n="faq.q2Tag">轮次</span>
-                  <span data-i18n="faq.q2">为什么最多支持 4 轮融资？</span>
+                  <span class="faq-kicker" data-zh="轮次" data-en="Rounds">轮次</span>
+                  <span data-zh="为什么最多支持 4 轮融资?" data-en="Why does the platform support up to four rounds?">
+                    为什么最多支持 4 轮融资?
+                  </span>
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="faq-answer">
-                  <p data-i18n="faq.a2">平台希望让融资结构足够清晰，既能支持项目逐步推进，也避免轮次过多导致认知混乱。</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary>
-                  <span class="faq-kicker" data-i18n="faq.q3Tag">披露</span>
-                  <span data-i18n="faq.q3">为什么不提前展示未来轮次？</span>
-                  <span class="faq-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="faq-answer">
-                  <p data-i18n="faq.a3">未来轮次应该建立在真实阶段成果之上，而不是提前虚构。这样可以减少预期透支。</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary>
-                  <span class="faq-kicker" data-i18n="faq.q4Tag">推进</span>
-                  <span data-i18n="faq.q4">下一轮是如何开启的？</span>
-                  <span class="faq-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="faq-answer">
-                  <p data-i18n="faq.a4">
-                    当项目完成当前阶段目标后，需要提交阶段证明，并配置下一阶段参数，之后才能开启下一轮。
+                  <p
+                    data-zh="平台希望让融资结构足够清晰，既能支持项目逐步推进，也避免轮次过多导致叙事冗长和市场认知混乱。"
+                    data-en="The goal is to keep the funding structure clear enough to support staged growth without turning the narrative into something long and confusing."
+                  >
+                    平台希望让融资结构足够清晰，既能支持项目逐步推进，也避免轮次过多导致叙事冗长和市场认知混乱。
                   </p>
                 </div>
               </details>
 
               <details class="faq-item">
                 <summary>
-                  <span class="faq-kicker" data-i18n="faq.q5Tag">资金</span>
-                  <span data-i18n="faq.q5">净融资额是什么意思？</span>
+                  <span class="faq-kicker" data-zh="披露" data-en="Disclosure">披露</span>
+                  <span data-zh="为什么不提前展示未来轮次?" data-en="Why are future rounds not shown in advance?">
+                    为什么不提前展示未来轮次?
+                  </span>
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="faq-answer">
-                  <p data-i18n="faq.a5">净融资额更接近当前阶段真实有效的资金状态，比表面的总额更能反映实际完成度。</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary>
-                  <span class="faq-kicker" data-i18n="faq.q6Tag">结算</span>
-                  <span data-i18n="faq.q6">退出申请为什么不是实时结算？</span>
-                  <span class="faq-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="faq-answer">
-                  <p data-i18n="faq.a6">如果实时打断资金状态，会破坏当前阶段的一致性。统一在阶段结束后结算，可以保持规则稳定。</p>
-                </div>
-              </details>
-
-              <details class="faq-item">
-                <summary>
-                  <span class="faq-kicker" data-i18n="faq.q7Tag">交易</span>
-                  <span data-i18n="faq.q7">为什么完成融资后要去 Plato 交易？</span>
-                  <span class="faq-toggle" aria-hidden="true"></span>
-                </summary>
-                <div class="faq-answer">
-                  <p data-i18n="faq.a7">
-                    因为 oneworld Launchpad 专注融资，而 Plato Spot Orderbook DEX 专注现货交易与价格发现。
+                  <p
+                    data-zh="因为未来轮次应该建立在真实阶段成果之上，而不是提前虚构。这样可以减少预期透支，让市场判断更基于现实。"
+                    data-en="Future rounds should be earned by real stage outcomes, not imagined in advance. This reduces expectation drag and keeps market judgment closer to reality."
+                  >
+                    因为未来轮次应该建立在真实阶段成果之上，而不是提前虚构。这样可以减少预期透支，让市场判断更基于现实。
                   </p>
                 </div>
               </details>
 
               <details class="faq-item">
                 <summary>
-                  <span class="faq-kicker" data-i18n="faq.q8Tag">差异</span>
-                  <span data-i18n="faq.q8">这和普通 launchpad 有什么不同？</span>
+                  <span class="faq-kicker" data-zh="推进" data-en="Progress">推进</span>
+                  <span data-zh="下一轮是如何开启的?" data-en="How is the next round unlocked?">
+                    下一轮是如何开启的?
+                  </span>
                   <span class="faq-toggle" aria-hidden="true"></span>
                 </summary>
                 <div class="faq-answer">
-                  <p data-i18n="faq.a8">
-                    普通 launchpad 更像一次性融资页，而 oneworld Launchpad 更像一套围绕真实阶段推进和后续交易承接的融资系统。
+                  <p
+                    data-zh="当项目完成当前阶段目标后，需要提交阶段证明，并配置下一阶段的价格、目标融资和释放比例，之后才能开启下一轮。"
+                    data-en="After the current stage goal is complete, the team submits proof and configures the next stage's price, funding target, and unlock ratio before the next round can open."
+                  >
+                    当项目完成当前阶段目标后，需要提交阶段证明，并配置下一阶段的价格、目标融资和释放比例，之后才能开启下一轮。
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span class="faq-kicker" data-zh="资金" data-en="Funding">资金</span>
+                  <span data-zh="净融资额是什么意思?" data-en="What does net funding mean?">
+                    净融资额是什么意思?
+                  </span>
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                  <p
+                    data-zh="净融资额更接近当前阶段真实有效的资金状态，相比表面的总数字，更能反映项目在这一阶段的实际完成度。"
+                    data-en="Net funding is closer to the capital that truly remains in the stage. It reflects actual completion more honestly than a surface-level total."
+                  >
+                    净融资额更接近当前阶段真实有效的资金状态，相比表面的总数字，更能反映项目在这一阶段的实际完成度。
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span class="faq-kicker" data-zh="结算" data-en="Settlement">结算</span>
+                  <span data-zh="退出申请为什么不是实时结算?" data-en="Why are exit requests not settled in real time?">
+                    退出申请为什么不是实时结算?
+                  </span>
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                  <p
+                    data-zh="如果实时打断资金状态，会破坏当前阶段的一致性。统一在阶段结束后结算，可以保持规则和资金状态稳定。"
+                    data-en="Real-time settlement would interrupt stage consistency. Settling after the stage ends keeps the rule set and funding state stable."
+                  >
+                    如果实时打断资金状态，会破坏当前阶段的一致性。统一在阶段结束后结算，可以保持规则和资金状态稳定。
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span class="faq-kicker" data-zh="交易" data-en="Trading">交易</span>
+                  <span data-zh="为什么完成融资后要去 Plato 交易?" data-en="Why does trading move to Plato after funding?">
+                    为什么完成融资后要去 Plato 交易?
+                  </span>
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                  <p
+                    data-zh="因为 oneworld Launchpad 专注融资，而 Plato Spot Orderbook DEX 专注现货交易与价格发现。分工明确，路径也更自然。"
+                    data-en="Because oneworld Launchpad is focused on funding while Plato Spot Orderbook DEX is focused on spot trading and price discovery. The split keeps the path clear."
+                  >
+                    因为 oneworld Launchpad 专注融资，而 Plato Spot Orderbook DEX 专注现货交易与价格发现。分工明确，路径也更自然。
+                  </p>
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span class="faq-kicker" data-zh="差异" data-en="Difference">差异</span>
+                  <span data-zh="这和普通 launchpad 有什么不同?" data-en="How is this different from a typical launchpad?">
+                    这和普通 launchpad 有什么不同?
+                  </span>
+                  <span class="faq-toggle" aria-hidden="true"></span>
+                </summary>
+                <div class="faq-answer">
+                  <p
+                    data-zh="普通 launchpad 更像一次性上线的融资页面，而 oneworld Launchpad 更像一套围绕真实阶段推进、透明披露和交易承接的融资系统。"
+                    data-en="A typical launchpad behaves more like a one-time raise page. oneworld Launchpad behaves like a funding system built around live stages, transparent disclosure, and a trading handoff."
+                  >
+                    普通 launchpad 更像一次性上线的融资页面，而 oneworld Launchpad 更像一套围绕真实阶段推进、透明披露和交易承接的融资系统。
                   </p>
                 </div>
               </details>
@@ -169,35 +265,52 @@
         </section>
 
         <section class="launch-section wrap reveal">
-          <p class="section-tag" data-i18n="faq.pageTag">FAQ</p>
-          <h2 data-i18n="faq.ctaTitle">想看完整路径？</h2>
-          <p class="launch-text" data-i18n="faq.ctaText">
-            继续查看机制页和 Launch to Trading 页面，就能把融资逻辑串起来。
+          <p class="section-tag">FAQ</p>
+          <h2
+            data-zh="还想继续看完整路径?"
+            data-en="Want to see the full path?"
+          >
+            还想继续看完整路径?
+          </h2>
+          <p
+            class="launch-text"
+            data-zh="继续查看机制页和 Launch to Trading 页面，就能把整套融资逻辑串起来。"
+            data-en="Continue into the mechanism page and the Launch to Trading page to connect the whole funding logic."
+          >
+            继续查看机制页和 Launch to Trading 页面，就能把整套融资逻辑串起来。
           </p>
           <div class="launch-actions">
-            <a class="primary-button" href="./mechanism.html" data-i18n="faq.ctaPrimary">查看机制</a>
-            <a class="secondary-button" href="./launch-to-trading.html" data-i18n="faq.ctaSecondary">查看路径</a>
+            <a class="primary-button" href="./mechanism.html" data-zh="查看机制" data-en="View Mechanism">查看机制</a>
+            <a class="secondary-button" href="./launch-to-trading.html" data-zh="查看路径" data-en="View Path">查看路径</a>
           </div>
         </section>
 
         <footer class="footer-shell wrap reveal">
           <div class="footer-card">
             <div class="footer-copy">
-              <strong data-i18n="common.footerTagline">连接 AI 生产力与 Web3 生产关系</strong>
-              <p data-i18n="common.footerNote">© 2026 oneworld. Built for AI Agents.</p>
+              <strong
+                data-zh="连接 AI 生产力与 Web3 生产关系"
+                data-en="Connect AI Productivity with Web3 Coordination"
+              >
+                连接 AI 生产力与 Web3 生产关系
+              </strong>
+              <p data-zh="© 2026 oneworld. Built for AI Agents." data-en="© 2026 oneworld. Built for AI Agents.">
+                © 2026 oneworld. Built for AI Agents.
+              </p>
               <div class="footer-nav">
-                <a href="./index.html" data-i18n="common.footerHome">首页</a>
-                <a href="./mechanism.html" data-i18n="common.navMechanism">机制</a>
-                <a href="./backers.html" data-i18n="common.navBackers">支持者</a>
-                <a href="./creators.html" data-i18n="common.navCreators">创作者</a>
-                <a href="./launch-to-trading.html" data-i18n="common.navPath">路径</a>
-                <a href="./faq.html" data-i18n="common.navFaq">FAQ</a>
+                <a href="./index.html" data-zh="首页" data-en="Home">首页</a>
+                <a href="./mechanism.html" data-zh="机制" data-en="Mechanism">机制</a>
+                <a href="./backers.html" data-zh="支持者" data-en="Backers">支持者</a>
+                <a href="./creators.html" data-zh="创作者" data-en="Creators">创作者</a>
+                <a href="./launch-to-trading.html" data-zh="路径" data-en="Path">路径</a>
+                <a href="./faq.html" data-zh="FAQ" data-en="FAQ">FAQ</a>
               </div>
             </div>
+
             <div class="lang-shell">
-              <span class="lang-label" data-i18n="common.footerLanguage">语言</span>
+              <span class="lang-label" data-zh="语言" data-en="Language">语言</span>
               <div class="lang-switch" role="group" aria-label="Language switcher footer">
-                <button type="button" data-lang-option="zh">中</button>
+                <button type="button" data-lang-option="zh">ZH</button>
                 <button type="button" data-lang-option="en">EN</button>
               </div>
             </div>
