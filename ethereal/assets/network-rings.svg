@@ -1,14 +1,67 @@
 <svg width="620" height="420" viewBox="0 0 620 420" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="620" height="420" rx="28" fill="#FFF1F8"/>
-  <ellipse cx="314" cy="156" rx="128" ry="48" stroke="#6068FF" stroke-width="3"/>
-  <ellipse cx="314" cy="178" rx="168" ry="62" stroke="#6CC8BF" stroke-width="3"/>
-  <ellipse cx="314" cy="198" rx="106" ry="40" stroke="#6068FF" stroke-width="3"/>
-  <path d="M282 138L322 206L282 226L242 206L282 138Z" fill="#B79EFF" stroke="#6068FF" stroke-width="2"/>
-  <path d="M322 138L362 206L322 226L282 206L322 138Z" fill="#8BD7E8" stroke="#6068FF" stroke-width="2"/>
-  <path d="M244 206L282 226V302L244 258V206Z" fill="#9E88FF" stroke="#6068FF" stroke-width="2"/>
-  <path d="M362 206L322 226V302L362 258V206Z" fill="#8677E8" stroke="#6068FF" stroke-width="2"/>
-  <rect x="420" y="222" width="102" height="52" rx="10" fill="#6CC8BF" stroke="#6068FF" stroke-width="2"/>
-  <path d="M110 246L152 228L178 260" stroke="#6068FF" stroke-width="2"/>
-  <circle cx="108" cy="246" r="8" fill="#FFD8E8" stroke="#6068FF" stroke-width="2"/>
-  <circle cx="472" cy="118" r="10" fill="#FFE7D7" stroke="#6068FF" stroke-width="2"/>
+  <rect width="620" height="420" rx="28" fill="url(#observatoryGlow)"/>
+
+  <g stroke="#5964F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 346H548"/>
+    <path d="M94 100H526"/>
+    <path d="M116 126H504"/>
+    <path d="M150 154H470"/>
+  </g>
+
+  <g>
+    <ellipse cx="314" cy="184" rx="138" ry="54" fill="none" stroke="#5964F2" stroke-width="2.4"/>
+    <ellipse cx="314" cy="200" rx="178" ry="68" fill="none" stroke="#7DD7C7" stroke-width="2.4"/>
+    <ellipse cx="314" cy="220" rx="118" ry="46" fill="none" stroke="#5964F2" stroke-width="2.4"/>
+    <circle cx="314" cy="188" r="42" fill="#FFF9F2" stroke="#5964F2" stroke-width="2.2"/>
+    <path d="M314 150L340 188L314 204L288 188L314 150Z" fill="#D4C8FF" stroke="#5964F2" stroke-width="2"/>
+    <path d="M288 188L314 204V238L288 220V188Z" fill="#BDE8FF" stroke="#5964F2" stroke-width="2"/>
+    <path d="M340 188L314 204V238L340 220V188Z" fill="#BFF1E4" stroke="#5964F2" stroke-width="2"/>
+  </g>
+
+  <g>
+    <rect x="72" y="188" width="120" height="106" rx="18" fill="#FFFFFF" stroke="#5964F2" stroke-width="2.2"/>
+    <path d="M92 268H170" stroke="#5964F2" stroke-width="2"/>
+    <rect x="92" y="236" width="14" height="32" rx="5" fill="#D8CAFF" stroke="#5964F2" stroke-width="2"/>
+    <rect x="116" y="216" width="14" height="52" rx="5" fill="#BEE6FF" stroke="#5964F2" stroke-width="2"/>
+    <rect x="140" y="226" width="14" height="42" rx="5" fill="#C7F0E5" stroke="#5964F2" stroke-width="2"/>
+    <path d="M92 210C108 196 126 190 148 192C170 194 186 204 196 220" stroke="#5964F2" stroke-width="2"/>
+    <circle cx="196" cy="220" r="6" fill="#5964F2"/>
+  </g>
+
+  <g>
+    <rect x="430" y="182" width="114" height="116" rx="18" fill="#FFFFFF" stroke="#5964F2" stroke-width="2.2"/>
+    <rect x="454" y="208" width="28" height="28" rx="8" fill="#EAF4FF" stroke="#5964F2" stroke-width="2"/>
+    <path d="M460 222L468 230L478 214" stroke="#5964F2" stroke-width="2"/>
+    <rect x="454" y="248" width="66" height="10" rx="5" fill="#D8CAFF" stroke="#5964F2" stroke-width="2"/>
+    <rect x="454" y="268" width="44" height="10" rx="5" fill="#C7F0E5" stroke="#5964F2" stroke-width="2"/>
+    <rect x="454" y="288" width="30" height="10" rx="5" fill="#FFE3F0" stroke="#5964F2" stroke-width="2"/>
+  </g>
+
+  <g>
+    <circle cx="116" cy="326" r="16" fill="#D5EBFF" stroke="#5964F2" stroke-width="2"/>
+    <path d="M100 382C104 348 120 338 136 340C152 342 162 358 164 384" fill="#CFE8FF" stroke="#5964F2" stroke-width="2.2"/>
+    <path d="M166 354L196 332" stroke="#5964F2" stroke-width="2.2"/>
+
+    <circle cx="506" cy="334" r="16" fill="#FFE1ED" stroke="#5964F2" stroke-width="2"/>
+    <path d="M490 390C494 356 510 346 526 348C542 350 552 366 554 392" fill="#FFD8E8" stroke="#5964F2" stroke-width="2.2"/>
+    <path d="M488 360L462 342" stroke="#5964F2" stroke-width="2.2"/>
+
+    <circle cx="284" cy="318" r="14" fill="#FFF3D5" stroke="#5964F2" stroke-width="2"/>
+    <path d="M270 362C274 334 286 326 300 328C314 330 322 344 324 364" fill="#FFE8C6" stroke="#5964F2" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.8">
+    <circle cx="220" cy="114" r="8" fill="#BDE8FF" stroke="#5964F2" stroke-width="1.8"/>
+    <circle cx="392" cy="108" r="10" fill="#FFE3F0" stroke="#5964F2" stroke-width="1.8"/>
+    <circle cx="214" cy="246" r="8" fill="#FFF3D5" stroke="#5964F2" stroke-width="1.8"/>
+    <circle cx="404" cy="248" r="8" fill="#C7F0E5" stroke="#5964F2" stroke-width="1.8"/>
+  </g>
+
+  <defs>
+    <radialGradient id="observatoryGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(314 188) rotate(90) scale(220 320)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F7F3FF"/>
+    </radialGradient>
+  </defs>
 </svg>
