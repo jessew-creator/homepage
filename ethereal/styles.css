@@ -221,7 +221,7 @@ main {
 .launch-section,
 .faq-shell,
 .footer-shell {
-  padding-top: 38px;
+  padding-top: 30px;
 }
 
 .hero-banner img,
@@ -235,12 +235,12 @@ main {
 }
 
 .hero-banner img {
-  min-height: 420px;
+  min-height: 392px;
   object-fit: cover;
 }
 
 .hero-copy {
-  padding: 48px 0 68px;
+  padding: 38px 0 54px;
   text-align: center;
   border-bottom: 1px solid var(--line);
 }
@@ -269,11 +269,11 @@ main {
 }
 
 .hero-copy h1 {
-  max-width: 11.8ch;
-  margin: 20px auto 0;
-  font-size: clamp(4.1rem, 8.8vw, 6.6rem);
+  max-width: 12.2ch;
+  margin: 14px auto 0;
+  font-size: clamp(3.45rem, 7.2vw, 5.35rem);
   font-weight: 900;
-  line-height: 0.92;
+  line-height: 0.96;
 }
 
 .lead,
@@ -292,15 +292,15 @@ main {
 
 .lead {
   max-width: 38rem;
-  margin: 24px auto 0;
-  font-size: 1.18rem;
+  margin: 18px auto 0;
+  font-size: 1.08rem;
 }
 
 .quick-links {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 28px;
-  padding: 38px 0 82px;
+  padding: 30px 0 64px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -363,7 +363,7 @@ main {
 .story-layout {
   display: grid;
   grid-template-columns: minmax(320px, 0.78fr) minmax(0, 1.08fr);
-  gap: 56px;
+  gap: 44px;
   align-items: center;
 }
 
@@ -385,16 +385,16 @@ main {
 .story-copy h2,
 .launch-section h2,
 .faq-head h2 {
-  margin-top: 16px;
-  font-size: clamp(3.5rem, 6.8vw, 5.5rem);
+  margin-top: 12px;
+  font-size: clamp(2.8rem, 5.6vw, 4.45rem);
   font-weight: 900;
-  line-height: 0.95;
+  line-height: 0.98;
 }
 
 .page-hero-copy p {
   max-width: 45rem;
-  margin: 24px 0 0;
-  font-size: 1.08rem;
+  margin: 18px 0 0;
+  font-size: 1.02rem;
 }
 
 .page-actions,
@@ -407,7 +407,7 @@ main {
 }
 
 .page-actions {
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .page-hero-card,
@@ -501,7 +501,7 @@ main {
 .story-layout,
 .launch-section,
 .footer-shell {
-  padding-top: 96px;
+  padding-top: 74px;
 }
 
 .feature-copy.wide {
@@ -509,7 +509,7 @@ main {
 }
 
 .use-grid {
-  margin-top: 30px;
+  margin-top: 24px;
   display: grid;
   grid-template-columns: 1.08fr 1.06fr 1.02fr;
   gap: 18px;
@@ -521,7 +521,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   min-height: 360px;
-  padding: 34px;
+  padding: 30px;
   border: 1px solid rgba(96, 104, 255, 0.14);
   box-shadow: var(--shadow);
 }
@@ -566,7 +566,7 @@ main {
   width: 100%;
   max-height: 340px;
   object-fit: contain;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .use-card.long img {
@@ -578,23 +578,23 @@ main {
 .use-text h3,
 .story-card h3,
 .signal-panel h3 {
-  font-size: clamp(2rem, 3.2vw, 2.8rem);
+  font-size: clamp(1.66rem, 2.6vw, 2.25rem);
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.04;
   margin: 0;
   letter-spacing: -0.05em;
 }
 
 .use-text p,
 .story-card p {
-  margin: 16px 0 0;
-  font-size: 1rem;
+  margin: 12px 0 0;
+  font-size: 0.98rem;
   color: var(--muted);
   line-height: 1.58;
 }
 
 .ghost-button {
-  margin-top: 24px;
+  margin-top: 18px;
   min-height: 46px;
   padding: 0 18px;
   border-radius: 10px;
@@ -603,14 +603,14 @@ main {
 
 .split-copy p:not(.section-tag),
 .story-copy p {
-  margin: 24px 0 0;
-  font-size: 1.02rem;
+  margin: 18px 0 0;
+  font-size: 0.99rem;
 }
 
 .split-copy h3,
 .story-copy h3 {
-  margin: 28px 0 0;
-  font-size: 1.14rem;
+  margin: 22px 0 0;
+  font-size: 1.06rem;
   font-weight: 800;
 }
 
@@ -654,7 +654,7 @@ main {
 }
 
 .story-grid {
-  margin-top: 28px;
+  margin-top: 22px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
@@ -719,7 +719,7 @@ main {
 }
 
 .timeline-grid {
-  margin-top: 26px;
+  margin-top: 22px;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 16px;
@@ -752,7 +752,7 @@ main {
 
 .faq-shell {
   display: grid;
-  gap: 28px;
+  gap: 22px;
 }
 
 .faq-head {
@@ -760,7 +760,7 @@ main {
 }
 
 .topic-chip-row {
-  margin-top: 24px;
+  margin-top: 18px;
   grid-template-columns: repeat(3, minmax(0, max-content));
 }
 
@@ -796,7 +796,7 @@ main {
 
 .faq-accordion {
   display: grid;
-  gap: 14px;
+  gap: 12px;
 }
 
 .faq-item {
@@ -812,7 +812,7 @@ main {
   grid-template-columns: max-content 1fr max-content;
   gap: 16px;
   align-items: center;
-  padding: 22px 24px;
+  padding: 18px 22px;
   cursor: pointer;
   list-style: none;
 }
@@ -867,7 +867,7 @@ main {
 }
 
 .faq-answer {
-  padding: 0 24px 24px 24px;
+  padding: 0 22px 20px 22px;
 }
 
 .launch-section {
@@ -876,14 +876,14 @@ main {
 
 .launch-text {
   max-width: 42rem;
-  margin: 22px auto 0;
-  font-size: 1.1rem;
+  margin: 18px auto 0;
+  font-size: 1.02rem;
 }
 
 .launch-actions,
 .footer-actions {
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 22px;
 }
 
 .footer-shell {
@@ -1037,11 +1037,11 @@ main {
   .launch-section,
   .faq-shell,
   .footer-shell {
-    padding-top: 28px;
+    padding-top: 22px;
   }
 
   .hero-copy {
-    padding: 36px 0 48px;
+    padding: 30px 0 40px;
   }
 
   .hero-copy h1,
@@ -1051,7 +1051,7 @@ main {
   .split-copy h2,
   .launch-section h2,
   .faq-head h2 {
-    font-size: clamp(2.8rem, 13vw, 4.3rem);
+    font-size: clamp(2.35rem, 10.8vw, 3.55rem);
   }
 
   .quick-links,
