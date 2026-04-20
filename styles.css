@@ -274,7 +274,7 @@ main {
   margin: 24px 0 0;
   max-width: 18ch;
   color: #e9edff;
-  font-size: clamp(1.42rem, 2.3vw, 1.95rem);
+  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.2;
@@ -964,7 +964,7 @@ main {
   }
 
   .home-hero .hero-subtitle {
-    font-size: 1.12rem;
+    font-size: 1.34rem;
   }
 
   .home-hero .hero-copy {
@@ -1049,7 +1049,7 @@ main {
 
   .home-hero .hero-subtitle {
     margin-top: 18px;
-    font-size: 1.05rem;
+    font-size: 1.18rem;
   }
 
   .home-hero .hero-visual {
