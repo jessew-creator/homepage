@@ -181,7 +181,7 @@ main {
 .home-hero .hero-stage {
   position: relative;
   overflow: hidden;
-  min-height: calc(100svh - var(--header) - 26px);
+  min-height: clamp(620px, calc(100svh - var(--header) - 54px), 760px);
   border: 1px solid var(--line);
   border-radius: 42px;
   background:
@@ -215,24 +215,29 @@ main {
   z-index: 1;
   min-height: inherit;
   display: grid;
-  align-content: space-between;
-  gap: 52px;
-  padding: 52px 52px 34px;
+  align-content: center;
+  justify-items: center;
+  gap: 28px;
+  padding: 44px 44px 26px;
 }
 
 .home-hero .hero-copy {
   position: relative;
   z-index: 1;
-  max-width: 640px;
+  max-width: 760px;
+  margin: 0 auto;
   padding: 0;
   border: 0;
   background: transparent;
   box-shadow: none;
+  text-align: center;
 }
 
 .home-hero .hero-title {
-  max-width: 9ch;
-  font-size: clamp(3.35rem, 6.5vw, 6.15rem);
+  max-width: 10ch;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(3.05rem, 6vw, 5.45rem);
 }
 
 .home-hero .hero-title span:last-child {
@@ -243,7 +248,9 @@ main {
 }
 
 .home-hero .hero-description {
-  max-width: 34rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .home-hero .hero-supporting {
@@ -253,6 +260,7 @@ main {
 
 .home-hero .hero-actions {
   margin-top: 30px;
+  justify-content: center;
 }
 
 .home-hero .hero-side {
@@ -261,6 +269,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  width: min(100%, 980px);
   padding: 0;
   border: 0;
   background: transparent;
@@ -268,7 +277,7 @@ main {
 }
 
 .home-hero .mini-card {
-  min-height: 138px;
+  min-height: 124px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -831,6 +840,10 @@ main {
   .home-hero .hero-stage {
     min-height: auto;
   }
+
+  .home-hero .hero-stage-inner {
+    padding: 38px 32px 24px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -855,13 +868,13 @@ main {
   }
 
   .home-hero .hero-stage-inner {
-    padding: 34px 24px 24px;
-    gap: 34px;
+    padding: 30px 22px 20px;
+    gap: 22px;
   }
 
   .home-hero .hero-title {
-    max-width: 10ch;
-    font-size: clamp(2.9rem, 11vw, 4.2rem);
+    max-width: 11ch;
+    font-size: clamp(2.7rem, 10vw, 3.95rem);
   }
 
   .home-hero .hero-rings-a,
@@ -877,47 +890,47 @@ main {
   }
 
   .home-hero .hero-rings-a {
-    width: 480px;
-    height: 480px;
-    top: 120px;
+    width: 430px;
+    height: 430px;
+    top: 156px;
   }
 
   .home-hero .hero-rings-b {
-    width: 320px;
-    height: 320px;
-    top: 184px;
+    width: 280px;
+    height: 280px;
+    top: 214px;
   }
 
   .home-hero .hero-orbit {
-    width: 560px;
-    height: 320px;
+    width: 500px;
+    height: 280px;
   }
 
   .home-hero .orbit-line-a {
-    top: 150px;
-  }
-
-  .home-hero .orbit-line-b {
-    bottom: 120px;
-  }
-
-  .home-hero .hero-core-mark {
     top: 182px;
   }
 
+  .home-hero .orbit-line-b {
+    bottom: 118px;
+  }
+
+  .home-hero .hero-core-mark {
+    top: 220px;
+  }
+
   .home-hero .dot-a {
-    top: 176px;
-    margin-left: 146px;
+    top: 218px;
+    margin-left: 124px;
   }
 
   .home-hero .dot-b {
-    top: 306px;
-    margin-left: -164px;
+    top: 314px;
+    margin-left: -138px;
   }
 
   .home-hero .dot-c {
-    bottom: 138px;
-    margin-left: 104px;
+    bottom: 120px;
+    margin-left: 94px;
   }
 
   .three-up,
@@ -959,8 +972,8 @@ main {
   }
 
   .home-hero .hero-stage-inner {
-    padding: 28px 18px 18px;
-    gap: 26px;
+    padding: 24px 16px 16px;
+    gap: 18px;
   }
 
   .home-hero .hero-description {
@@ -973,60 +986,64 @@ main {
   }
 
   .home-hero .mini-card {
-    min-height: 116px;
+    min-height: 104px;
   }
 
   .home-hero .hero-rings-a {
-    width: 360px;
-    height: 360px;
-    top: 180px;
+    width: 300px;
+    height: 300px;
+    top: 232px;
   }
 
   .home-hero .hero-rings-b {
-    width: 240px;
-    height: 240px;
-    top: 228px;
+    width: 210px;
+    height: 210px;
+    top: 274px;
   }
 
   .home-hero .hero-orbit {
-    width: 430px;
-    height: 250px;
+    width: 340px;
+    height: 208px;
   }
 
   .home-hero .orbit-line-a {
-    top: 220px;
+    top: 252px;
   }
 
   .home-hero .orbit-line-b {
-    bottom: 148px;
+    bottom: 122px;
   }
 
   .home-hero .hero-core-mark {
-    top: 238px;
-    width: 132px;
-    height: 236px;
+    top: 286px;
+    width: 104px;
+    height: 182px;
   }
 
   .home-hero .hero-core-mark::before {
-    width: 58px;
-    height: 184px;
+    width: 48px;
+    height: 144px;
   }
 
   .home-hero .hero-core-mark::after {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
   }
 
   .home-hero .dot-a {
-    margin-left: 116px;
+    top: 278px;
+    margin-left: 86px;
   }
 
   .home-hero .dot-b {
-    margin-left: -128px;
+    top: 334px;
+    margin-left: -92px;
   }
 
   .home-hero .dot-c {
-    margin-left: 78px;
+    bottom: 110px;
+    margin-left: 60px;
   }
 
   .section-head h2,
