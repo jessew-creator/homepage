@@ -10,6 +10,7 @@ const MIME_TYPES = {
   ".css": "text/css; charset=utf-8",
   ".js": "application/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
+  ".pdf": "application/pdf",
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
@@ -50,6 +51,20 @@ const server = http.createServer((req, res) => {
   fs.stat(filePath, (error, stats) => {
     if (!error && stats.isFile()) {
       sendFile(filePath, res);
+      return;
+    }
+
+    if (!error && stats.isDirectory()) {
+      const directoryIndex = path.join(filePath, "index.html");
+
+      fs.stat(directoryIndex, (dirError, dirStats) => {
+        if (!dirError && dirStats.isFile()) {
+          sendFile(directoryIndex, res);
+          return;
+        }
+
+        sendFile(path.join(ROOT, "index.html"), res);
+      });
       return;
     }
 
